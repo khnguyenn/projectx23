@@ -161,3 +161,9 @@ h2 {
     display: flex;
 }
 
+@media(max-width:400px) {
+    .hang1 {
+        display: block;
+    }
+}
+
