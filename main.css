@@ -165,5 +165,8 @@ h2 {
     .hang1 {
         display: block;
     }
+    .box_container {
+        margin: 20px auto ;
+    }
 }
 
