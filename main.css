@@ -88,19 +88,34 @@ h1 {
 }
 
 #logo {
-    margin: 15px auto;
+    margin-top: 25px;
     display: block;
     object-fit: cover;
     width: 100px;
     height: 100px;
+    position: relative;
+    animation: mymove 15s infinite;
 }
 
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 100%;}
+}
 .box_container {
     width: 300px;
     height: 300px;
     background-color: var(--background-color);
     border-radius: 12px;
     margin: 25px 30px;
+    text-align: center;
+    overflow: hidden;
+}
+.box_container_dacbiet {
+    width: 300px;
+    height: 300px;
+    background-color: var(--background-color);
+    border-radius: 12px;
+    margin: 25px 35px;
     text-align: center;
     overflow: hidden;
 }
@@ -124,6 +139,8 @@ img {
     height: 100%;
     object-position: center;
 }
+
+
 h2 {
     color: white;
     text-align: center;
@@ -157,11 +174,24 @@ h2 {
     background-color:var(--text-color);
 }
 
-.hang1 {
+.hang1 , .hang_dacbiet{
     display: flex;
 }
-
-@media(max-width:400px) {
+@media(max-width:1050px) {
+    .hang1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box_container {
+        flex: 33%;
+        margin: 25px 35px;
+    }
+    .box_container_dacbiet{
+        width: 314px;
+        height: 300px;
+    }
+}
+@media(max-width:450px) {
     .hang1 {
         display: block;
     }
@@ -169,4 +199,5 @@ h2 {
         margin: 20px auto ;
     }
 }
+
 
